@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Second Hand Mobiles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Navigation Menu */
+    nav {
+      background-color: #333;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section for Mobiles */
+    section {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .phone-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .phone-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+
+    .phone-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .phone-name {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .phone-price {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Mobiles</a></li>
+      <li><a href="#">Add Mobile</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Second Hand Mobiles Section -->
+  <section>
+    <h2>Second Hand Mobiles for Sale</h2>
+    <div class="phone-list">
+
+      <!-- Phone 1 -->
+      <div class="phone-card">
+        <img src="Old/a1.jpeg" alt="iPhone 12">
+        <div class="phone-name">iPhone 12 (64GB)</div>
+        <div class="phone-price">$400</div>
+      </div>
+
+      <!-- Phone 2 -->
+      <div class="phone-card">
+        <img src="Old/a2.jpeg" alt="Samsung S21">
+        <div class="phone-name">Samsung Galaxy S21</div>
+        <div class="phone-price">$350</div>
+      </div>
+
+      <!-- Phone 3 -->
+      <div class="phone-card">
+        <img src="Old/a3.jpeg" alt="Redmi Note 10">
+        <div class="phone-name">Redmi Note 10</div>
+        <div class="phone-price">$180</div>
+      </div>
+
+      <!-- Phone 4 -->
+      <div class="phone-card">
+        <img src="Old/a4.webp" alt="Redmi Note 10">
+        <div class="phone-name">Redmi Note 10</div>
+        <div class="phone-price">$180</div>
+      </div>
+
+      <!-- Add more phones as needed -->
+    </div>
+  </section>
+
+</body>
+</html>

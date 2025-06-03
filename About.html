@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #3a8ef0, #6c63ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 800px;
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 0.8s ease forwards;
+      transform: translateY(20px);
+      opacity: 0;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .info-section {
+      margin-bottom: 25px;
+      text-align: left;
+    }
+
+    .info-section h2 {
+      font-size: 20px;
+      color: #6c63ff;
+      margin-bottom: 8px;
+    }
+
+    .info-section p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .location-link {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #3a8ef0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .location-link:hover {
+      text-decoration: underline;
+    }
+
+    marquee {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 25px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .logo {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- 🔽 Replace 'logo.png' with your actual logo file path -->
+    <img src="app_logo/logo123.png" alt="App Logo" class="logo" />
+
+    <h1>ℹ About This Platform</h1>
+
+    <div class="info-section">
+      <h2>👨‍💻 Created By:</h2>
+      <p>This mobile shop website was proudly designed and developed by <strong>Saiprasad Rampure</strong> — a passionate developer dedicated to creating user-friendly digital experiences. Built with HTML, CSS, and a touch of love for mobile tech, this platform helps users explore and purchase new, second-hand phones and accessories with ease.</p>
+    </div>
+
+    <div class="info-section">
+      <h2>🛠 Shop Owner:</h2>
+      <p><strong>Santosh Harale</strong> is the owner of Sai Mobile Shop, responsible for sales, product quality, customer satisfaction, and mobile repairs.</p>
+    </div>
+
+    <div class="info-section">
+      <h2>📍 Shop Location:</h2>
+      <p>
+       jay bhawani gala no.17 near jodbhavi police chowki Solapur, ghongade wasti near national laundry, Kumbhar ves, Solapur
+        <br />
+        <a class="location-link" href="https://maps.app.goo.gl/DZFrNZB9W1F8uuvz6" target="_blank">
+          👉 Open in Google Maps
+        </a>
+      </p>
+    </div>
+
+    <marquee style="background-color: purple; color: black;">
+      Sai Mobile Shop.  📞Contact No. +91 84829 80748  📧Email Id. sharale8084@gmail.com
+    </marquee>
+
+  </div>
+</body>
+</html>

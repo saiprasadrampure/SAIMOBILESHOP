@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feedback</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #3a8ef0, #6c63ff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 500px;
+      width: 100%;
+      animation: slideIn 0.8s ease forwards;
+      transform: translateY(30px);
+      opacity: 0;
+    }
+
+    @keyframes slideIn {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #6c63ff;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border: 2px solid #6c63ff;
+      border-radius: 10px;
+      font-size: 16px;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #594ad4;
+      box-shadow: 0 0 5px #594ad4;
+    }
+
+    textarea {
+      min-height: 100px;
+    }
+
+    button {
+      background-color: #6c63ff;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-weight: 700;
+    }
+
+    button:hover {
+      background-color: #594ad4;
+    }
+
+    /* Optional: simple validation feedback */
+    input:invalid, textarea:invalid {
+      border-color: #ff4d4d;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>💬 Submit Your Feedback</h1>
+    <form id="feedbackForm" action="#" method="POST" novalidate>
+      
+      <label for="name">Name *</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required />
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required />
+
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" placeholder="Write your feedback here..." required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+
+</body>
+</html>

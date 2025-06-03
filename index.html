@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Material - Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      position: relative;
+      min-height: 100vh;
+      background: linear-gradient(135deg, rgba(58, 142, 240, 0.7), rgba(108, 99, 255, 0.7)),
+                  url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      padding: 40px 30px;
+      width: 100%;
+      max-width: 1000px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      animation: floatIn 1s ease forwards;
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+
+    @keyframes floatIn {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c2c2c;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: linear-gradient(to right, #83a4d4, #b6fbff);
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #2e2e2e;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #444;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .card h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to Sai Mobile Shop</h1>
+
+    <div class="grid">
+      <a href="pages/new.html">
+        <div class="card">
+          <h2>📱 New Phone</h2>
+        </div>
+      </a>
+
+      <a href="pages/old.html">
+        <div class="card">
+          <h2>📞 Second Hand Phone</h2>
+        </div>
+      </a>
+
+      <a href="pages/Accessories.html">
+        <div class="card">
+          <h2>🎧 Accessories</h2>
+        </div>
+      </a>
+
+      <a href="pages/feedback.html">
+        <div class="card">
+          <h2>💬 Feedback</h2>
+          <p>Submit feedback to improve our platform.</p>
+        </div>
+      </a>
+
+      <a href="pages/about.html">
+        <div class="card">
+          <h2>ℹ About</h2>
+          <p>Know more about our mission and app creators.</p>
+        </div>
+      </a>
+    </div><br><br>
+    <marquee style="background-color: rgb(255, 140, 0); color: black;">
+  Sai Mobile Shop.  ☎️ contact no.+918482980748. 📩 Email id. sharale8084@gmail.com
+</marquee>
+  </div>
+</body>
+</html>

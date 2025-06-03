@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login with Google - Sai Mobile Shop</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #3f87a6, #ebf8e1);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .login-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 30px;
+      font-size: 24px;
+      color: #333;
+    }
+    .google-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      color: #444;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+    }
+    .google-btn:hover {
+      background: #f1f1f1;
+    }
+    .google-btn img {
+      height: 20px;
+      margin-right: 10px;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login with Google</h1>
+    <button class="google-btn" onclick="signInWithGoogle()">
+      <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" />
+      Sign in with Google
+    </button>
+    <div class="footer">Sai Mobile Shop</div>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
+
+  <script>
+   
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAjCAuyo650OGYjfmKr8C6UWNvlyGSIuBM",
+    authDomain: "sai-mobile-shop-ce9c6.firebaseapp.com",
+    projectId: "sai-mobile-shop-ce9c6",
+    storageBucket: "sai-mobile-shop-ce9c6.firebasestorage.app",
+    messagingSenderId: "234537796409",
+    appId: "1:234537796409:web:19cb451df62513969c1ee8",
+    measurementId: "G-F01Y852H65"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+  </script>
+</body>
+</html>
